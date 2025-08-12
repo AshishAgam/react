@@ -1,0 +1,160 @@
+.product-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding-left: 100px; 
+}
+
+.product-content {
+  max-width: 800px;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px; 
+}
+
+.product-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 0; /* Remove extra space */
+  margin-bottom: 20px;
+}
+
+.product-subtext {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.product-subtext2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #00ffcc;
+}
+
+.see-demo {
+  background-color: #17ac37;
+  border: none;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.right-image {
+  display: flex;
+  align-items: top;
+}
+
+.right-image img {
+  width: 500px;
+  max-width: 100%;
+}
+
+
+/* Trust Section */
+.trust-section {
+  background: white;
+  text-align: center;
+}
+
+.trust-heading {
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.trust-logos {
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.trust-logos img {
+  height: 70px;
+}
+
+.trust-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.gradient-box {
+  width: 160px;
+  height: 130px;
+  background: #00f2ff;
+  left: 0px;
+}
+
+.info-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-right: 300px;
+}
+
+.info-text {
+  font-size: 23px;
+  color: black;
+  padding-right: 350px;
+  margin-top: 0px;
+}
+
+/* third section */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 60px 30px;
+  margin-left: 90px;
+  margin-right: 90px;
+  text-align: center;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  width: 90px;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.feature-item p {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.see-demo-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.see-demo2 {
+  background-color: #17ac37;
+  border: none;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+
