@@ -1,39 +1,27 @@
+import { NavLink, Route, Routes } from 'react-router';
 import './App.css';
-import { useEffect, useState } from 'react';
+import UserAdd from './useradd';
+import UserList from './userlist';
+import UserEdit from './userupdate';
 
 function App() {
-  const [usersData, setUserData] = useState([]);
 
-  useEffect(() =>{
-    getUserData()
-  },[]);
-
-  async function getUserData(){
-    const url = "https://dummyjson.com/users";
-    let response = await fetch(url);
-    response = await response.json()
-    setUserData(response.users);
-  }
-
-  console.log(usersData);
 
   return (
-    <div className="App">
-      <h1>Fetch data from API</h1>
-      <ul className='user-list user-list-head'>
-            <li>First Name</li>
-            <li>Last Name</li>
-            <li>Age</li>
-          </ul>
-      {
-        usersData && usersData.map((user) => (
-          <ul className='user-list'>
-            <li>{user.firstName}</li>
-            <li>{user.lastName}</li>
-            <li>{user.age}</li>
-          </ul>
-        ))
-      }
+    <div>
+      <ul className='nav-list'>
+        <li>
+          <NavLink to="/">List</NavLink>
+        </li>
+        <li>
+          <NavLink to="/add">Add User</NavLink>
+        </li>
+      </ul>
+      <Routes>
+        <Route path="/" element={<UserList/>} />
+        <Route path="/add" element={<UserAdd/>} />
+        <Route path="/edit/:id" element={<UserEdit/>}/>
+      </Routes>
     </div>
   );
 }

@@ -50,3 +50,10 @@
   font-size: 20px;
   font-weight: 700;
 }
+
+.nav-list {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  list-style: none;
+}
